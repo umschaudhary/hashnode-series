@@ -22,7 +22,6 @@ func NewDatabase() Database {
 
 	URL := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8&parseTime=True&loc=Local", USER, PASS,
 		HOST, DBNAME)
-	fmt.Println(URL)
 	db, err := gorm.Open(mysql.Open(URL))
 
 	if err != nil {

@@ -9,10 +9,9 @@ ADD go.sum .
 
 
 RUN go mod download
-ADD . .
-
 RUN go get github.com/githubnemo/CompileDaemon
 
+ADD . .
 
 EXPOSE 8000
 
