@@ -13,7 +13,7 @@ type Post struct {
 	UpdatedAt time.Time `json:"updated_at,omitempty"`
 }
 
-// TableName method that returns tablename of Question model
+// TableName method that returns tablename of Post model
 func (post *Post) TableName() string {
 	return "post"
 }
